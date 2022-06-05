@@ -192,19 +192,7 @@ svg #seven {
 
 @media screen and (max-width: 622px) {
   svg {
-    margin: 0 0;
-  }
-  @-webkit-keyframes smoke {
-    100% {
-      -webkit-transform: scale(0.001);
-              transform: scale(0.001);
-    }
-  }
-  @keyframes smoke {
-    100% {
-      -webkit-transform: scale(0.001);
-              transform: scale(0.001);
-    }
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */

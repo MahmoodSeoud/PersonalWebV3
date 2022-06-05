@@ -6,19 +6,17 @@
     <title>Scroll Website</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/main.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="css/skills.css" />
+    <link rel="stylesheet" href="css/socials.css" />
+
     <script src="https://kit.fontawesome.com/01510a4100.js" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
   </head>
   <body>
     <!-- Navbar Section -->
     <nav class="navbar">
       <div class="navbar__container">
-        <a href="#home" id="navbar__logo">Mahmood Seoud</a>
+        <a href="#home" id="navbar__logo"><i class="fa-solid fa-terminal"> &nbsp;</i>Mahmood<br>Seoud</a>
         <div class="navbar__toggle" id="mobile-menu">
           <span class="bar"></span> <span class="bar"></span>
           <span class="bar"></span>
@@ -32,11 +30,11 @@
           </li>
           <li class="navbar__item">
             <a href="#services" class="navbar__links" id="services-page"
-              >Skills & Experience</a
+              >Skills</a
             >
           </li>
           <li class="navbar__btn">
-            <a href="#sign-up" class="button" id="signup">Contact me</a>
+            <a href="#contact-me" class="button" id="contactme">Contact me</a>
           </li>
         </ul>
       </div>
@@ -45,10 +43,14 @@
     <!-- Hero Section -->
     <div class="hero" id="home">
       <div class="hero__container">
-        <h1 class="hero__heading"><span>Love</span> what you do, </h1>
-        <h2 class="hero__heading"> do what you <span>Love</span> </h2>
-        <button class="main__btn"><a href="#">Resume</a></button>
-        <svg width="589.383px" height="263.312px" viewBox="0 0 409.383 263.312">
+        <h1 class="hero__heading">Hi, I'm <span>Mahmood</span> </h1>
+        <p class="hero__paragraph">
+          I'm currently working as an It-Support at Elgiganten.
+          I'm also a second year computer science student at University of Copenhagen in Copenhagen.
+         </p>
+        
+
+        <svg class="hero-design" width="589.383px" height="263.312px" viewBox="0 0 409.383 263.312">
           <desc>The Code 7 logo, the name wrapped between two curly brackets</desc>
           <g id="name">
               <path id="c" class="letter" d="M39.735,91.88c16.048,0,33.428,8.742,36.414,29.439H56.667c-2.764-7.856-8.63-11.401-16.932-11.401
@@ -72,9 +74,23 @@
             h57.524c14.073,0,23.254,0,23.254-11.015V192.02h22.642v22.336c0,9.179-16.521,26.008-41.307,26.008h-56.911
             c-26.929,0-42.838,2.143-49.263,22.949H194.899z"/>
         </svg>
+        <button class="main__btn"><a href="#">Resume</a></button>
       </div>
+            <!-- SOCIAL LINKS -->
+            <div class="socials" data-aos="fade-in"> 
+              <ul>
+                <li class="bg-blue"><a href="https://www.linkedin.com/in/mahmoodmohammedseoud/"
+                  target="_blank"><span class="socials-text">LinkedIn</span> <i class="fab fa-linkedin fa-2x"></i
+                ></a></li>
+                <li class="bg-dark-grey"> <a href="https://github.com/MahmoodSeoud"
+                  target="_blank"><span class="socials-text">GitHub</span><i class="fab fa-github fa-2x"></i
+                ></a></li>
+                <li class="bg-white"><a class="text-dark-grey" href="mailto:mahmoodseoud@gmail.com"><span class="socials-text">Email</span><i class="fas fa-envelope fa-2x"></i></a></li>
+              </ul>
+            </div>
+          </div>
     </div>
-
+    
     <!-- About Section -->
     <div class="main" id="about">
       <div class="main__container">
@@ -82,7 +98,7 @@
           <div class="main__img--card"> <img src="images/programGreen.svg" alt=""></div>
         </div>
         <div class="main__content">
-          <h1>Who am i?</h1>
+          <h1>About <span>Me</span></h1>
           <h2>Passionated Person</h2>
           <p>Schedule a call to learn more about our services</p>
           <button class="main__btn"><a href="#">Schedule Call</a></button>
@@ -118,7 +134,7 @@
     </div>
 
     <!-- Features Section -->
-    <div class="main" id="sign-up">
+    <div class="main" id="contact-me">
       <div class="main__container">
         <div class="main__content">
           <h1>Join Our Team</h1>
@@ -134,61 +150,48 @@
       </div>
     </div>
 
+        <!-- Skills -->
+    
+        <section id="skills" class="skills">
+          <div class="container" data-aos="fade-in"> 
+            <h2 class="text-white main-font">My <span>Skills</span></h2>
+            <ul class="skills-icons">
+              <li><span class="iconify" data-icon="logos:javascript" data-inline="false" data-width="90px" data-height="90px"></span><span>JavaScript</span></li>
+              <li><span class="iconify" data-icon="logos:fsharp" data-inline="false" data-width="90px" data-height="90px"></span><span>F#</span></li>
+              <li><span class="iconify" data-icon="logos:python" data-inline="false" data-width="90px" data-height="90px"></span><span>Python</span></li>
+              <li><span class="iconify" data-icon="logos:c-sharp" data-inline="false" data-width="90px" data-height="90px"></span><span>C#</span></li>
+              <li><span class="iconify" data-icon="logos:java" data-inline="false" data-width="90px" data-height="90px"></span><span>Java</span></li>
+              <li><span class="iconify" data-icon="vscode-icons:file-type-html" data-inline="false" data-width="90px" data-height="90px"></span><span>HTML</span></li>
+              <li><span class="iconify" data-icon="vscode-icons:file-type-css" data-inline="false" data-width="90px" data-height="90px"></span><span>CSS</span></li>
+              <li><span class="iconify" data-icon="vscode-icons:file-type-scss2" data-inline="false" data-width="90px" data-height="90px"></span><span>SCSS</span></li>
+              <li><span class="iconify" data-icon="logos:git-icon" data-inline="false" data-width="90px" data-height="90px"></span><span>Git</span></li>
+              <li><span class="iconify" data-icon="logos:mysql" data-inline="false" data-width="90px" data-height="90px"></span><span>MySQL</span></li>
+              <li><span class="iconify" data-icon="flat-color-icons:linux" data-inline="false" data-width="90px" data-height="90px"></span><span>Linux</span></li>          
+            </ul>
+          </div>
+        </section>
+
     <!-- Footer Section -->
     <div class="footer__container">
-      <div class="footer__links">
-        <div class="footer__link--wrapper">
-          <div class="footer__link--items">
-            <h2>About Us</h2>
-            <a href="/sign__up">How it works</a> <a href="/">Testimonials</a>
-            <a href="/">Careers</a> <a href="/">Terms of Service</a>
-          </div>
-          <div class="footer__link--items">
-            <h2>Contact Us</h2>
-            <a href="/">Contact</a> <a href="/">Support</a>
-            <a href="/">Destinations</a>
-          </div>
-        </div>
-        <div class="footer__link--wrapper">
-          <div class="footer__link--items">
-            <h2>Videos</h2>
-            <a href="/">Submit Video</a> <a href="/">Ambassadors</a>
-            <a href="/">Agency</a>
-          </div>
-          <div class="footer__link--items">
-            <h2>Social Media</h2>
-            <a href="/">Instagram</a> <a href="/">Facebook</a>
-            <a href="/">Youtube</a> <a href="/">Twitter</a>
-          </div>
-        </div>
-      </div>
       <section class="social__media">
         <div class="social__media--wrap">
           <div class="footer__logo">
-            <a href="/" id="footer__logo">Mahmood</a>
+            <a href="/" id="footer__logo"><i class="fa-solid fa-terminal"></i>Mahmood Seoud</a>
           </div>
-          <p class="website__rights">© Mahmood Seoud 2022. All rights reserved</p>
-          <div class="social__icons">
-            <a href="/" class="social__icon--link" target="_blank"
-              ><i class="fab fa-facebook"></i
-            ></a>
-            <a href="/" class="social__icon--link"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a href="/" class="social__icon--link"
-              ><i class="fab fa-youtube"></i
-            ></a>
-            <a href="/" class="social__icon--link"
-              ><i class="fab fa-linkedin"></i
-            ></a>
-            <a href="/" class="social__icon--link"
-              ><i class="fab fa-twitter"></i
-            ></a>
+          <ul>
+            <li class="footer-icon"><a href="https://www.linkedin.com/in/mahmoodmohammedseoud/"
+              target="_blank"><i class="fab fa-linkedin fa-2x"></i
+            ></a></li>
+            <li class="footer-icon"> <a href="https://github.com/MahmoodSeoud"
+              target="_blank"><i class="fab fa-github fa-2x"></i
+            ></a></li>
+            <li class="footer-icon"><a class="text-dark-grey" href="mailto:mahmoodseoud@gmail.com"><i class="fas fa-envelope fa-2x"></i></a>
+            </li>
+          </ul>
           </div>
         </div>
       </section>
     </div>
-
     <script src="app.js"></script>
   </body>
 </html>
