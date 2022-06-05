@@ -1,13 +1,3 @@
-:root {
-  --DarkGreen-color: #164A41;
-  --MediumGreen-color: #4D774E;
-  --LightGreen-color: #9DC88D;
-  --NaturalYellow-color: #F1B24A;
-  --White-color: #FFFFFF;
-  --linkedin-color: #0077b5;
-  --black-color: #0000;
-}
-
 .socials {
   position: absolute;
   bottom: 40%;
